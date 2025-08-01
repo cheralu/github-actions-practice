@@ -19,7 +19,7 @@ jobs:
           username: tech  # or your username
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /path/to/deploy/folder
+            cd /opt/actions
             git pull origin main
             npm install
             pm2 restart app  # or your command to restart the service
